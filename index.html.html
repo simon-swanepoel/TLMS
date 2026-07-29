@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Machine Shop - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Matched exactly to the logo image's background color */
+            background-color: #040507;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Top 50% section */
+        .top-half {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Image constrained to 40% of screen height, maintaining aspect ratio */
+        .top-half img {
+            height: 40vh;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Bottom 50% section */
+        .bottom-half {
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Text constrained to 15% of screen height */
+        .coming-soon {
+            font-size: 15vh;
+            font-weight: 900;
+            letter-spacing: 2px;
+            line-height: 1;
+            text-transform: uppercase;
+            text-align: center;
+            color: #f26522; /* Logo industrial orange accent */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top 50%: Logo Centered -->
+    <div class="top-half">
+        <img src="IMG-20260727-WA0001.jpg" alt="Little Machine Shop Logo">
+    </div>
+
+    <!-- Bottom 50%: Coming Soon Centered -->
+    <div class="bottom-half">
+        <h1 class="coming-soon">COMING SOON</h1>
+    </div>
+
+</body>
+</html>
